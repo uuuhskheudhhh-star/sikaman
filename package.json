@@ -1,0 +1,12 @@
+{
+    "name": "shortlink-saas-mvp",
+    "version": "1.0.0",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.11.15",
+        "dotenv": "^8.2.0"
+    },
+    "scripts": {
+        "start": "node src/server.js"
+    }
+}

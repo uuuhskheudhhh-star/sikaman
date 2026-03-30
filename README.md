@@ -1,33 +1,57 @@
-# Sikaman
+# Shortlink SaaS MVP
 
-This is a comprehensive shortlink SaaS MVP project.
+This is the Shortlink SaaS MVP project designed to provide a simple and efficient URL shortening service for users. The project consists of several key components, including user authentication, URL shortening, link analytics, and a dashboard for users to manage their links.
 
-## Folder Structure
+## Project Structure
 
 ```plaintext
-/sikaman
-|-- /src
-|   |-- /controllers         # For handling requests
-|   |-- /models              # For database models
-|   |-- /routes              # For API routes
-|   |-- /services            # For business logic
-|   |-- /config              # For configuration settings
-|   |-- /middlewares          # For authentication and authorization middleware
-|   |-- /utils               # Utility functions
-|   |-- /analytics           # For analytics tracking
-|   |-- /monetization        # For monetized redirect logic
-|   `-- /public              # For public resources (images, styles)
-|-- /tests                   # Tests for the application
-|-- /docs                    # Documentation for the project
-|-- .env                     # Environment variables
-|-- .gitignore               # Git ignore file
-|-- package.json             # NPM package file
-|-- README.md                # Project overview and setup instructions
+shortlink-saas-mvp/
+├── src/
+│   ├── controllers/
+│   │   ├── linkController.js
+│   │   └── userController.js
+│   ├── models/
+│   │   ├── linkModel.js
+│   │   └── userModel.js
+│   ├── routes/
+│   │   ├── linkRoutes.js
+│   │   └── userRoutes.js
+│   ├── views/
+│   │   ├── dashboard.ejs
+│   │   └── index.ejs
+│   ├── public/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   └── js/
+│   │       └── app.js
+│   ├── config/
+│   │   └── db.js
+│   └── server.js
+├── .env
+├── .gitignore
+└── package.json
 ```
 
-## Setup Instructions
+## Features
+- User Registration and Authentication
+- URL Shortening
+- Link Analytics (Clicks, Visits)
+- User Dashboard
+- Admin Panel
 
-1. Clone the repo.
-2. Install dependencies using `npm install`.
-3. Set environment variables in `.env` file.
-4. Start the server using `npm start`.
+## Installation
+1. Clone the repository.
+2. Navigate into the directory: `cd shortlink-saas-mvp`
+3. Install dependencies: `npm install`
+4. Setup your environment variables in the `.env` file.
+5. Start the application: `node src/server.js`
+
+## Usage
+- Visit the homepage to shorten a URL.
+- Use the dashboard to manage your shortened links and view analytics.
+
+## Contributing
+Feel free to submit issues or pull requests for any suggestions or improvements.
+
+## License
+This project is licensed under the MIT License.
